@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: true  # [unix or osx or python_impl == 'pypy']
+  skip: true  # [python != "3.12" or unix or osx or python_impl == "pypy"]
 
 requirements:
   build:
@@ -20,6 +20,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
+    - m2w64-gcc-fortran  # [win]     # gfortran on Windows
+    - m2w64-gcc          # [win]
     - pkg-config
   host:
     - python
