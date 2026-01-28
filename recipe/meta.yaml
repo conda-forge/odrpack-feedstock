@@ -22,8 +22,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
-    - m2w64-gcc-fortran >= 13  # [win]
-    - m2w64-gcc >= 13          # [win]
+    - m2w64-gcc-fortran >=13  # [win]
+    - m2w64-gcc >=13          # [win]
     - pkg-config
   host:
     - python
