@@ -9,9 +9,9 @@ channel_targets:
 cxx_compiler:
 - vs2022
 fortran_compiler:
-- '14'
+- flang
 fortran_compiler_version:
-- '5'
+- '14'
 openblas:
 - 0.3.*
 pin_run_as_build:
