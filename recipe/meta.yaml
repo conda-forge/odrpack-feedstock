@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: true  # [python != "3.12" or unix or osx or python_impl == "pypy"]
+  skip: true  # [py != 312 or unix or osx or python_impl == "pypy"]
 
 requirements:
   build:
