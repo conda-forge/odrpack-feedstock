@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 fortran_compiler:
-- flang
+- '14'
 fortran_compiler_version:
 - '5'
 openblas:
