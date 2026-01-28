@@ -1,0 +1,2 @@
+fortran_compiler:  # [win]
+ - 14              # [win]

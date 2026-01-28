@@ -16,12 +16,14 @@ build:
 
 requirements:
   build:
+    - python                               # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}   # [build_platform != target_platform]
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
-    - m2w64-gcc-fortran  # [win]     # gfortran on Windows
-    - m2w64-gcc          # [win]
+    - m2w64-gcc-fortran                    # [win]
+    - m2w64-gcc                            # [win]
     - pkg-config
   host:
     - python
