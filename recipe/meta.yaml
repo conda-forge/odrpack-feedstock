@@ -23,6 +23,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
     - pkg-config
+    - clang                                 # [win]
   host:
     - python
     - pip
