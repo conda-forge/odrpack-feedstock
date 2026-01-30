@@ -1,5 +1,7 @@
 @echo on
-setlocal
+setlocal enabledelayedexpansion
+
+echo Starting Windows build script...
 
 clang-cl.exe --version || exit /b 1
 

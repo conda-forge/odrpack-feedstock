@@ -13,8 +13,8 @@ build:
   number: 0
   skip: true  # [py != 312 or not win or python_impl == "pypy"]
   script:
-    - set "LD=lld-link.exe"  # [win]
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+    - bld.bat  # [win]
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation # [not win]
 
 requirements:
   build:
