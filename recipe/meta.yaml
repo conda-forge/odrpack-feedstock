@@ -12,9 +12,8 @@ source:
 build:
   number: 0
   skip: true  # [py != 312 or not win or python_impl == "pypy"]
-  script:
-    - bld.bat  # [win]
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation  # [not win]
+  # script:
+  #   - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
