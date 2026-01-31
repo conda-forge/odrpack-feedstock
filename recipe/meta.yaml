@@ -34,6 +34,7 @@ requirements:
     - nanobind-abi
     - openblas
     - libflang         # [win]
+    - llvm-openmp      # [win]
     - llvm             # [win]
     - flang-rt_win-64  # [win]
   run:
