@@ -32,7 +32,7 @@ requirements:
     - nanobind
     - nanobind-abi
     - openblas
-    - libflang-rt  # [win]
+    - libflang  # [win]
   run:
     - python
     - numpy >=1.24
