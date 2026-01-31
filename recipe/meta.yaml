@@ -30,12 +30,9 @@ requirements:
     - python
     - pip
     - meson-python >=0.15.0
-    - nanobind
-    - nanobind-abi
     - openblas
   run:
     - python
-    - nanobind-abi
     - numpy >=1.24
     - libopenblas 
 
