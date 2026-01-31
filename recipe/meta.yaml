@@ -33,8 +33,6 @@ requirements:
     - nanobind
     - nanobind-abi
     - openblas
-    - libflang         # [win]
-    - flang-rt_win-64  # [win]
   run:
     - python
     - numpy >=1.24
