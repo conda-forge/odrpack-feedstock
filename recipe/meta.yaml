@@ -1,5 +1,5 @@
 {% set name = "odrpack" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/odrpack-{{ version }}.tar.gz
-  sha256: 5a9dc4b0964a2c26fd4dd723e89139ea27db457309306179cb6009133887ad29
+  sha256: 0898475969cf4119a340879b99f632ffd9fbe1c88fdcbeea62eeb91fba1cda70
 
 build:
   number: 0
@@ -18,7 +18,7 @@ requirements:
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ stdlib('c') }}        
+    - {{ stdlib('c') }}
     - pkg-config
     - ninja
     - python                               # [build_platform != target_platform]
@@ -32,7 +32,7 @@ requirements:
   run:
     - python
     - numpy >=1.24
-    - libopenblas 
+    - libopenblas
 
 test:
   imports:
