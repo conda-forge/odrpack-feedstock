@@ -1,5 +1,5 @@
 {% set name = "odrpack" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/odrpack-{{ version }}.tar.gz
-  sha256: 0898475969cf4119a340879b99f632ffd9fbe1c88fdcbeea62eeb91fba1cda70
+  sha256: 69acd76098a57d74183c24049841eaadc5a0b4e5463fb2e9ca0f5c8f66118f6b
 
 build:
   number: 0
