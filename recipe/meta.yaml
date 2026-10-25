@@ -28,11 +28,9 @@ requirements:
     - python
     - pip
     - meson-python >=0.15.0
-    - openblas
   run:
     - python
     - numpy >=1.24
-    - libopenblas
 
 test:
   imports:
